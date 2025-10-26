@@ -19,9 +19,9 @@ Key features implemented:
 ## 🧩 Tech Stack
 **Frontend:** React  
 **Backend:** Django REST Framework  
-**Database:** PostgreSQL  
+**Database:** SQLite3  
 **Version Control:** Git  
-**Tools:** VS Code, Postman, Cloud Storage for testing
+**Tools:** VS Code
 
 ---
 git clone https://github.com/MDMOIZ1309/talenttrack-partial-code.git
@@ -54,8 +54,8 @@ text
 ## 📊 Features in Progress
 Upcoming modules planned for full release:
 - Job Listings and Filtering by Verified Skills  
-- Interview Preparation and Mock Tests  
-- Advanced Analytics Dashboard  
+- Interview Preparation  
+- Enhancing UI  
 
 ---
 
