@@ -1,0 +1,150 @@
+.register-page-center-bg {
+    min-height: 100vh;
+    width: 100vw;
+    background: #f5f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-centered-card {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    align-items: stretch;
+    min-height: 650px;
+    /* makes the card tall enough to center child scroll */
+}
+
+.register-image-container {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f8;
+}
+
+.register-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.register-form-panel {
+    flex: 1;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* ensures the form gets the full panel height */
+}
+
+.register-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.register-form-scrollable {
+    overflow-y: auto;
+    max-height: 500px;
+    /* form itself scrolls inside right panel */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.register-form-scrollable input,
+.register-form-scrollable select {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #d1d5db;
+    color: #374151;
+    outline: none;
+    background: #fff;
+}
+
+.register-form-scrollable input:focus,
+.register-form-scrollable select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+}
+
+.custom-dropdown {
+    cursor: pointer;
+    background-color: #f9fafb;
+}
+
+.custom-dropdown:hover {
+    background-color: #e0e7ff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.action-button {
+    flex: 1;
+    max-width: 160px;
+    padding: 0.85rem 0;
+    font-weight: 600;
+    font-size: 1.12rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #1f2937;
+    color: white;
+    box-shadow: 0 5px 15px rgba(31, 41, 55, 0.15);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 0 5px;
+}
+
+.action-button:disabled {
+    background-color: #a1a1aa;
+    color: #fff;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.action-button:hover:not(:disabled) {
+    background-color: #111827;
+    box-shadow: 0 7px 20px rgba(17, 24, 39, 0.2);
+}
+
+@media (max-width: 900px) {
+    .register-centered-card {
+        flex-direction: column;
+    }
+
+    .register-image-container {
+        padding: 20px 10px;
+    }
+
+    .register-form-panel {
+        padding: 3rem 2rem;
+    }
+}

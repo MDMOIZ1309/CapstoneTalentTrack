@@ -1,0 +1,182 @@
+.assessments-page-bg {
+    min-height: 100vh;
+    background: #f4f6fa;
+    display: flex;
+    justify-content: flex-start;
+    /* Left align for side nav */
+    padding: 0;
+}
+
+.assessments-container {
+    margin-top: 64px;
+    /* Height of topbar */
+    margin-left: 230px;
+    /* Width of sidebar */
+    padding: 2rem 3vw 2rem 2rem;
+    /* More right padding for large screens */
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(31, 41, 55, 0.08);
+    min-height: calc(100vh - 64px);
+    width: calc(100vw - 180px - 32px);
+    /* fills space left by sidebar with padding */
+    max-width: none;
+    /* Remove fixed max width */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Scroll container with fixed max height and scroll */
+.assessments-list {
+    /* existing styles */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 66vh;
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: transparent transparent;
+    /* Firefox */
+    padding-right: 8px;
+
+    /* For WebKit browsers */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.assessments-list::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just to make scrollbar transparent */
+}
+
+/* Enable scrolling but no visible scrollbar */
+
+.assessments-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #182b4e;
+    text-align: left;
+    margin-bottom: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+.assessment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 1.15rem;
+    padding: 1rem 1.8rem;
+    transition: background 0.18s;
+    border: 1px solid #e5e7eb;
+}
+
+.assessment-item:last-child {
+    margin-bottom: 0;
+}
+
+.assessment-item:hover {
+    background: #e9f1fc;
+    border-color: #cce1fd;
+}
+
+.assessment-name {
+    font-size: 1.09rem;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    color: #1a2952;
+    flex: 1;
+    white-space: normal;
+    /* allow multiline if needed */
+    word-wrap: break-word;
+}
+
+.attempt-btn {
+    display: inline-block;
+    padding: 0.50rem 1.22rem;
+    background: linear-gradient(90deg, #2563eb 70%, #1e40af 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.07rem;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(37, 99, 235, 0.12);
+    cursor: pointer;
+    transition: background 0.16s, box-shadow 0.18s;
+    outline: none;
+}
+
+.attempt-btn:hover,
+.attempt-btn:focus {
+    background: linear-gradient(90deg, #1d4ed8 70%, #1e40af 100%);
+    box-shadow: 0 4px 18px rgba(37, 99, 235, 0.19);
+    text-decoration: none;
+}
+
+.assessments-footer-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 0rem;
+    color: #1f2937;
+}
+
+.assessments-footer-img h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.assessments-footer-img p {
+    font-size: 0.8rem;
+    color: #4b5563;
+}
+
+.help-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.help-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive: stack for small screens */
+@media (max-width: 700px) {
+    .assessments-container {
+        max-width: 100%;
+        padding: 1.2rem 0.4rem;
+        min-height: unset;
+    }
+
+    .assessment-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        padding: 0.95rem 0.6rem;
+    }
+
+    .assessments-title {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    /* Scroll list height reduced on small screen */
+    .assessments-list {
+        max-height: 50vh;
+    }
+}

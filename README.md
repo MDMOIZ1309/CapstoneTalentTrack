@@ -1,67 +1,70 @@
-# TalentTrack (Partial Implementation - 25%)
+# Getting Started with Create React App
 
-This repository contains approximately 25% of the source code for **TalentTrack**, a job-based web platform focused on helping users manage their resumes, track skill assessments, and prepare for interviews efficiently.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 🚀 About the Project
-TalentTrack is a **job-seeker support platform** designed to simplify the career-building process.  
-This partial version demonstrates the **core functionality** and **system architecture**, serving as a foundation for further development.
+In the project directory, you can run:
 
-Key features implemented:
-- User Authentication (JWT-based login and signup)
-- Resume Management Module (upload and view)
-- Skill Assessment Module (basic test handling)
-- REST API integration between frontend and backend
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🧩 Tech Stack
-**Frontend:** React  
-**Backend:** Django REST Framework  
-**Database:** SQLite3  
-**Version Control:** Git  
-**Tools:** VS Code
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
-git clone https://github.com/MDMOIZ1309/talenttrack-partial-code.git
+### `npm test`
 
-text
-2. Navigate to the project directory  
-cd talenttrack-partial-code
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-text
-3. Install dependencies  
-- For backend:
-  ```
-  pip install -r requirements.txt
-  ```
-- For frontend:
-  ```
-  npm install
-  ```
-4. Run the backend server:
-python manage.py runserver
+### `npm run build`
 
-text
-5. Run the frontend server:
-npm start
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-text
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 📊 Features in Progress
-Upcoming modules planned for full release:
-- Job Listings and Filtering by Verified Skills  
-- Interview Preparation  
-- Enhancing UI  
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 📜 License
-This project is for academic and demonstrative purposes.  
-© 2025 TalentTrack Development Team
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## ⚙️ Installation and Setup
-1. Clone the repository  
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

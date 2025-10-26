@@ -1,0 +1,46 @@
+.resume-container {
+    margin-top: 74px;
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.resume-container h2 {
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.3rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem 0.5rem 0 0;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+.error-text {
+    color: #dc2626;
+    margin-top: 0.7rem;
+}
+
+.resume-actions a {
+    margin-right: 20px;
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resume-actions a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+.home-container {
+    margin-left: 240px;
+    /* same as sidebar width */
+    padding: 20px;
+    min-height: 100vh;
+    background: #f9fafb;
+}

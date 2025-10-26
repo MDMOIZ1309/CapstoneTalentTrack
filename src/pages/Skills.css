@@ -1,0 +1,206 @@
+/* Main content wrapper */
+.content {
+    margin-left: 240px;
+    /* sidebar width */
+    margin-top: 80px;
+    /* topbar height */
+    padding: 30px 20px;
+    /* reduced horizontal padding for smaller screens */
+    min-height: 100vh;
+    background: #f9fafb;
+    box-sizing: border-box;
+    /* Make padding inclusive in size */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container Card */
+.skills-container {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Title */
+.skills-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    /* allow wrapping on smaller screens */
+}
+
+/* Skill input */
+.skill-input {
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.skill-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    /* blue on focus */
+    box-shadow: 0 0 5px #2563ebaa;
+}
+
+/* Save Button */
+.save-btn {
+    padding: 10px 22px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.save-btn:hover {
+    background: #1e40af;
+}
+
+/* Skills List as clean grid */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+/* Skill Card */
+.skill-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill name */
+.skill-name {
+    font-size: 16.5px;
+    font-weight: 600;
+    color: #111827;
+    flex-grow: 1;
+    user-select: text;
+    /* only text selectable */
+}
+
+/* Actions container */
+.skill-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+/* Buttons */
+.verify-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.25s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.verify-btn:hover {
+    background: #059669;
+}
+
+.remove-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.25s ease;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.remove-btn:hover {
+    background: #b91c1c;
+}
+
+/* Show uploaded file name styling */
+.skill-card>div:last-child {
+    margin-top: 6px;
+    font-size: 0.85em;
+    color: #6b7280;
+    user-select: text;
+}
+
+/* Empty State Message */
+.empty-msg {
+    color: #6b7280;
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 1.05em;
+    text-align: center;
+}
+
+/* Success Popup Mesage */
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup-message {
+    background: #22c55e;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: slideDownFade 0.3s ease forwards;
+}

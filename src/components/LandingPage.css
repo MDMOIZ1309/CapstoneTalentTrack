@@ -1,0 +1,93 @@
+/* Fullscreen Background with Darkest Fixed Color */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.landing-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1e3c72;
+    color: white;
+    padding: 2rem;
+}
+
+/* Fade & Slide In Animation */
+.landing-content {
+    animation: fadeUp 1.2s ease forwards;
+    opacity: 0;
+}
+
+/* Title Styling */
+.landing-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+/* Subtitle Styling */
+.landing-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Buttons Container */
+.landing-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn,
+.primary,
+.secondary {
+    border: 2px solid #4a90e2;
+    /* bright blue border */
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: #2a5298;
+    /* medium blue shade lighter than bg */
+    box-shadow: 0 4px 12px rgba(42, 82, 152, 0.7);
+}
+
+.btn:hover,
+.primary:hover,
+.secondary:hover {
+    background-color: #4a90e2;
+    /* bright blue on hover */
+    border-color: #68a9ff;
+    box-shadow: 0 6px 22px rgba(74, 144, 226, 0.9);
+    transform: scale(1.08);
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
